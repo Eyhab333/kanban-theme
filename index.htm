@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>kanban</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <style>
+      body {
+        background: #20212c;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      aside {
+        background: #2b2c37;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        padding-top: 32px;
+        padding-right: 24px;
+        border-right: 1px solid #3e3f4e;
+        display: grid;
+      }
+      .logo {
+        width: 152.53px;
+        height: 25.22px;
+        margin-bottom: 54px;
+        margin-left: 34px;
+      }
+      .head {
+        background: #2b2c37;
+        height: 96px;
+        border-bottom: 1px solid #3e3f4e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 32px;
+      }
+      h1 {
+        margin-left: 350px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .all {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 2.4px;
+        color: #828fa3;
+        margin-left: 32px;
+        margin-bottom: 19px;
+      }
+      .platform {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 14px 32px;
+      }
+      .active {
+        background: #635fc7;
+        border-radius: 0px 100px 100px 0px;
+      }
+      .active p {
+        color: white;
+      }
+      .platform .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 16px;
+      }
+      .notactive p {
+        color: #828fa3;
+      }
+      .create p {
+        color: #635fc7;
+      }
+      .toggle-theme-container {
+        padding-left: 24px;
+      }
+      .align-self {
+        align-self: flex-end;
+      }
+      .hide-sidbar {
+        display: flex;
+        align-items: center;
+        padding-bottom: 47px;
+        padding-top: 22px;
+        padding-left: 31px;
+      }
+      .icon-hide {
+        margin-right: 15px;
+      }
+      .hide-sidbar p {
+        color: #828fa3;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      main {
+        height: 100%;
+      }
+      .middle {
+        height: 100%;
+        width: 100%;
+      }
+      .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+      }
+      .body p {
+        color: #828fa3;
+        padding-left: 200px;
+      }
+      .add {
+        height: 48px;
+        width: 174px;
+        margin-left: 190px;
+        margin-top: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div>
+          <div class="logo">
+            <img src="./assets/logo-light.svg" alt="logo" />
+          </div>
+          <div class="all-boards">
+            <p class="all">ALL BOARDS (8)</p>
+          </div>
+          <div class="platform active">
+            <div class="icon">
+              <img src="./assets/icon-board-light.svg" alt="board" />
+            </div>
+            <p>Platform Launch</p>
+          </div>
+          <div class="platform notactive">
+            <div class="icon">
+              <img src="./assets/icon-board-light.svg" alt="board" />
+            </div>
+            <p>Marketing Plan</p>
+          </div>
+          <div class="platform notactive">
+            <div class="icon">
+              <img src="./assets/icon-board-light.svg" alt="board" />
+            </div>
+            <p>Roadmap</p>
+          </div>
+          <div class="platform create">
+            <div class="icon">
+              <img src="./assets/icon-board-purple.svg" alt="board" />
+            </div>
+            <p>+ Create New Board</p>
+          </div>
+        </div>
+
+        <div class="align-self">
+          <div class="toggle-theme-container">
+            <div class="toggle-theme">
+              <img src="./assets/toggle-theme.svg" alt="t" />
+            </div>
+          </div>
+          <div class="hide-sidbar">
+            <div class="icon-hide">
+              <img src="./assets/icon-hide-sidebar.svg" alt="hide" />
+            </div>
+            <p>Hide Sidebar</p>
+          </div>
+        </div>
+      </aside>
+
+      <section class="middle">
+        <div class="head">
+          <h1>Platform Launch</h1>
+          <div class="right">
+            <img src="./assets/head-right.svg" alt="r" />
+          </div>
+        </div>
+
+        <div class="body">
+          <p>This board is empty. Create a new column to get started.</p>
+          <div class="add">
+            <img src="./assets/add.svg" alt="add" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
